@@ -1,0 +1,256 @@
+/* Fuentes de Google Fonts
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+/* Paleta de colores
+ Texto principal #353A47
+ Texto secundario #7E7F83
+ texto claro #F3F3F4
+ Fondo  
+  
+ */
+
+/* Estilos generales del body */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente principal */
+    color: #200f0f; /* Color de texto principal */
+    background-color:rgb(175, 223, 255);
+    margin: 50px auto; 
+
+}
+
+/* Estilos para la sección principal (main) */
+main {
+    /* Dimensiones del contenedor main */
+    width: 80%;
+    height: 80vh; /* 80% de la altura de la ventana */
+    /* Posición del contenedor */
+    margin: 50px auto; /* Centra el contenedor horizontalmente */
+
+    /* Disposición del contenido de main */
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente para esta sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(132, 218, 247);
+    background-position: top;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+/* Estilos para el título principal */
+main h1 {
+    font-size: 50px;
+    color: #1e0a0a; /* Texto claro para contraste con el fondo */
+    margin: 50px;
+}
+
+/* Estilos para el subtítulo */
+main h3 {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #240e0e;
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Posición y tamaño de todos los contenedores section */
+section {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* HEADER */
+header {
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 1px solid #7E7F83; /* Línea separadora */
+}
+
+/* Brand */
+.brand img {
+    width: 150px;
+}
+
+/* Menú de navegación ubicado en el header */
+header .navBar a {
+    text-decoration: none;
+    color: #353A47;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Disposición del contenido de la sección 3 que incluye el slider */
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor Slider */
+.slideshow-container {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Oculta las imágenes por default */
+.mySlides {
+    display: none;
+}
+
+/* Estilos comunes para las imágenes del slider */
+<img class="img-1" src= "/img/short an sweet cartel.jpg" "alt=cartel de la gira">
+<img-2,class="img-2" src= src="/img/sabrina slider.jpg" alt=">
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Animación para el efecto de fundido */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Definición de la animación de fundido */
+@keyframes fade {
+    from { opacity: 0.2; }
+    25% { opacity: 0.4; }
+    50% { opacity: 0.6; }
+    75% { opacity: 0.8; }
+    to { opacity: 1; }
+}
+
+/* Estilos para la sección de Proyectos */
+.proyectos {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.proyectos .contenedor .titulo-seccion h3 {
+    text-align: center;
+}
+
+/* Galería de proyectos */
+.proyectos .galeria-proyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 34px;
+}
+
+.proyectos .galeria-proyectos .proyecto {
+    width: 32%; /* Distribuye en 3 columnas */
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.proyectos .galeria-proyectos .proyecto img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+/* Estilos para el modal de fotos de proyectos */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.911); /* Fondo semi-transparente */
+    z-index: 44444; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    width: 80%;
+    max-width: 700px;
+    transition: 2s;
+    border-radius: 10px;
+}
+
+/* Botón para cerrar el modal */
+.modal .btn-cerrar {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: 40px;
+    background: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal .btn-cerrar i {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+/* Efecto de rotación al pasar el mouse sobre el botón de cerrar */
+.modal .btn-cerrar i:hover {
+    transform: rotate(90deg);
+    transition: all 0.2s linear;
+}
+
+/* Estilos para las flechas de navegación del modal */
+.flecha-izquierda,
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.flecha-izquierda {
+    left: 10px;
+}
+
+.flecha-derecha {
+    right: 10px;
+}
+
+/* FOOTER */
+footer {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 2px solid #7E7F83;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .menuSecundario {
+    text-align: center;
+}
+
+footer .menuRRSS {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #353A47;
+}
